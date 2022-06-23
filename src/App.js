@@ -1,11 +1,12 @@
-
+import React from "react";
+import Navbar from "./components/navbar";
 
 function App() {
-  const name="Afreen";
+  
   
   return (
     
-      <h1>hello {name}!</h1>
+      <Navbar />
     
   );
 }

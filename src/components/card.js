@@ -1,13 +1,14 @@
 import React from "react";
 
-export default function Card(){
+export default function Card(props){
+       
     return(
         <div className="Card">
-            <img src="https://tse3.mm.bing.net/th?id=OIP.CtgdtOhFw6Iw4TZ_Jt6gLgHaEK&pid=Api&P=0&w=297&h=167" alt="nonk" className="card_img" />
+            <img src={props.img} alt="nonk" className="card_img" />
             <div className="card--stats">
-                <span>likes</span>
-                <span></span>
-                <span>3k</span>
+                <span>likes {props.likes}</span>
+                <span>comments {props.comments[1]}</span>
+                <span>3k {props.views}</span>
             </div>
         </div>
     )

@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "./components/navbar";
 import Card from "./components/card"
 import list from "./components/objlist"
+import DealData from "./components/dealData";
+
 
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
     <div>
        <Navbar />
        {d}
+       <Card />
+       <DealData />
       </div>
      
     
